@@ -64,10 +64,11 @@ class _SignUpPageState extends State<SignUpPage> {
                       style: Theme.of(context).textTheme.titleSmall,
                       children: [
                     TextSpan(
-                        text: 'Sign in',
-                        style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                            color: AppPallete.gradient2,
-                            fontWeight: FontWeight.w600))
+                      text: 'Sign in',
+                      style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                          color: AppPallete.gradient2,
+                          fontWeight: FontWeight.w600),
+                    )
                   ]))
             ],
           ),

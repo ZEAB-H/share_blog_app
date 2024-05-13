@@ -13,13 +13,11 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
-  final nameController = TextEditingController();
   final formKey = GlobalKey<FormState>();
 
   @override
   void dispose() {
     emailController.dispose();
-    nameController.dispose();
     passwordController.dispose();
     super.dispose();
   }
@@ -36,13 +34,8 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Sign Up',
+                'Login',
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(height: 30),
-              AuthField(
-                hintText: "Name",
-                controller: nameController,
               ),
               const SizedBox(height: 15),
               AuthField(
